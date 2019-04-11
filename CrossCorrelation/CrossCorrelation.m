@@ -1,9 +1,9 @@
 % cross-correlation
 % The code aims to calculate time delay between input (blue LED light intensity) and
 % output (protein fluorescence intensity) signals using the following equation for G:
-% G_(u_deg*y) (?) = 1/(N-|?| ) * ??u_deg (n)*y(n+?)?   ??0
-% G_(u_deg*y) (?) = G_(y*u_deg ) (-?)                    ?<0
-% where G_(u_deg*y) (?) is the cross-correlation between u_deg (input) and y (output) at time lag ?.
+% G_(u_deg*y) (taw) = 1/(N-|taw| ) * Sigma(from n = 0 to N-taw+1)[u_deg (n)*y(n+taw)]   taw>=0
+% G_(u_deg*y) (taw) = G_(y*u_deg ) (-taw)                    taw<0
+% where G_(u_deg*y) (taw) is the cross-correlation between u_deg (input) and y (output) at time lag taw.
 
 % @author Bahareh Mahrou
 
